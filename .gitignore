@@ -1,12 +1,12 @@
 /UploadedImage
+/App_Data
+/bin
+/obj
+/Properties
+/api
 /ApplicationInsights.xml
 /Global.asax
 /Global.asax.cs
 /LiveOdia.APi.csproj
 /LiveOdia.APi.csproj
 /packages.xml
-/App_Data
-/bin
-/obj
-/Properties
-/api
