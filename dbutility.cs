@@ -55,7 +55,28 @@ namespace LiveOdia.APi
 
         public static void SaveData(Dictionary<string, object> myData)
         {
-            throw new NotImplementedException();
+            MySqlConnection conn = new MySqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MyLocalDb"].ConnectionString);
+            bool res = false;
+            try
+            {
+
+                foreach (var key in myData) {
+
+                }
+
+                MySqlCommand cmd = new MySqlCommand();
+                conn.Open();
+                cmd.CommandText = "INSERT INTO newsdivision (newsdiv) VALUES (@newsdiv)";
+                cmd.Parameters.AddWithValue("newsdiv", myData.Keys);
+                cmd.Connection = conn;
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+                res = true;
+            }
+            catch (Exception ex)
+            {
+                res = false;
+            }
         }
     }
 }
