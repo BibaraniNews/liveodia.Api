@@ -10,3 +10,17 @@
 /LiveOdia.APi.csproj
 /LiveOdia.APi.csproj
 /packages.xml
+
+
+ApplicationInsights.config
+LiveOdia.APi.csproj.user
+packages.config
+
+ApplicationInsights.config
+LiveOdia.csproj
+LiveOdia.csproj.user
+Web.Debug.config
+Web.Release.config
+Web.config
+packages.config
+packages
