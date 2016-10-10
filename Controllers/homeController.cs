@@ -14,7 +14,12 @@ namespace LiveOdia.APi.Controllers
         // GET: api/home
         public DataTable Get()
         {
-            return dbutility.getAllRecord();
+            return dbutility.getAllTopStory();
+        }
+
+        public DataTable Get(int id)
+        {
+            return dbutility.getTopNewsById(id);
         }
 
         // GET: api/home/5
